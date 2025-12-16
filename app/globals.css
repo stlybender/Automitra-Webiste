@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Bebas Neue', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-cream-50 text-gray-900 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-on-scroll {
+    @apply opacity-0 translate-y-4 transition-all duration-700;
+  }
+
+  .animate-on-scroll.visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  /* Pop Art Border */
+  .pop-art-border {
+    border: 5px solid #000;
+    box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  }
+
+  .pop-art-border-thin {
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  }
+
+  /* Comic Shadow */
+  .comic-shadow {
+    box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  }
+
+  .comic-shadow-sm {
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  }
+
+  .comic-shadow-lg {
+    box-shadow: 12px 12px 0px 0px rgba(0, 0, 0, 1);
+  }
+
+  /* Halftone Background */
+  .halftone-bg {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.15) 1px, transparent 1px);
+    background-size: 8px 8px;
+  }
+
+  .halftone-bg-dense {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2) 1.5px, transparent 1.5px);
+    background-size: 6px 6px;
+  }
+
+  .halftone-bg-light {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+    background-size: 10px 10px;
+  }
+
+  /* Vintage Badge/Starburst */
+  .vintage-badge {
+    position: relative;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #FFD600;
+    color: #000;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+    transform: rotate(-2deg);
+  }
+
+  /* Bold Box */
+  .bold-box {
+    border: 4px solid #000;
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+    background: #fff;
+  }
+
+  /* Pop Art Text Outline */
+  .text-pop-outline {
+    text-shadow: 
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      2px 2px 0 #000;
+  }
+
+  /* Retro Dots Pattern */
+  .retro-dots {
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(0, 0, 0, 0.1) 2px, transparent 2px),
+      radial-gradient(circle at 75% 75%, rgba(0, 0, 0, 0.1) 2px, transparent 2px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+  }
+}
+

@@ -1,0 +1,40 @@
+# Character Illustrations
+
+## License Information
+
+The character illustrations in this directory are **custom-created SVG placeholders** for the AutoMitra AI landing page.
+
+### Usage Rights
+- These illustrations are part of the AutoMitra AI project
+- Created specifically for this project and can be modified as needed
+- No external attribution required
+
+### Design Style
+- Minimalist cartoon-style characters
+- Consistent gradient color schemes matching the brand palette
+- Each character represents a different AI agent/role
+- Designed to be easily replaceable with custom illustrations
+
+### Characters Included
+1. `autodial.svg` - AutoDial Sales Closer (Blue/Cyan gradient)
+2. `receptionist.svg` - Smart Receptionist (Purple/Pink gradient)
+3. `whatsapp.svg` - WhatsApp Follow-Up Buddy (Green gradient)
+4. `router.svg` - Lead Router (Orange/Red gradient)
+5. `knowledge.svg` - Knowledge-Base Expert (Indigo/Violet gradient)
+6. `onboarding.svg` - Onboarding Concierge (Teal/Cyan gradient)
+
+### Replacing Characters
+To use your own illustrations:
+1. Export your characters as SVG, PNG, or WebP
+2. Replace the files in this directory
+3. Update the import paths in the component files if the filenames change
+4. Recommended dimensions: 200x200px or larger for crisp display
+
+### AI-Generated Alternative
+If you prefer AI-generated illustrations, consider:
+- **Hugging Face Diffusers** (open-source, locally run)
+- **Stable Diffusion** (open-source)
+- **Professional services**: Midjourney, DALL-E, or commission a designer
+
+For consistent style, use the same prompt structure across all characters.
+
