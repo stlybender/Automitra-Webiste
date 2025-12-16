@@ -52,7 +52,7 @@ export function Navbar() {
             </div>
 
             <div className="flex items-center space-x-4">
-              <Button variant="primary" size="md" onClick={() => setIsModalOpen(true)}>
+              <Button variant="primary" size="sm" onClick={() => setIsModalOpen(true)}>
                 Launch AI Team
               </Button>
             </div>
