@@ -7,13 +7,13 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-14 h-14 relative overflow-hidden flex items-center justify-center">
+              <div className="w-12 h-12 relative flex items-center justify-center">
                 <Image
-                  src="/automitra-logo.png"
+                  src="/am-logo.webp"
                   alt="AutoMitra Logo"
-                  width={80}
-                  height={80}
-                  className="object-contain scale-150"
+                  width={48}
+                  height={48}
+                  className="object-contain"
                 />
               </div>
               <span className="text-3xl font-black text-white uppercase tracking-tight">

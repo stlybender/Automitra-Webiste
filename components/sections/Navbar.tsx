@@ -28,13 +28,13 @@ export function Navbar() {
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center">
               <a href="#" className="flex items-center space-x-2">
-                <div className="w-14 h-14 relative overflow-hidden flex items-center justify-center">
+                <div className="w-12 h-12 relative flex items-center justify-center">
                   <Image
-                    src="/automitra-logo.png"
+                    src="/am-logo.webp"
                     alt="AutoMitra Logo"
-                    width={80}
-                    height={80}
-                    className="object-contain scale-150"
+                    width={48}
+                    height={48}
+                    className="object-contain"
                     priority
                   />
                 </div>
