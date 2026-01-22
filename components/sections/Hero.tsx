@@ -22,39 +22,34 @@ export function Hero() {
           <div className="text-center max-w-4xl mx-auto mb-16">
             <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black mb-6 text-balance leading-tight uppercase tracking-tight">
               <span className="text-black">
-                AI Team That Grows
+                Never Miss a
               </span>
               <br />
               <span className="inline-block bg-accent-500 text-black px-6 py-2 -rotate-2 border-4 border-black comic-shadow-lg mt-4">
-                Your Pipeline
+                Booking Call Again
               </span>
             </h1>
             
             <p className="text-xl sm:text-2xl text-gray-900 mb-8 leading-relaxed max-w-3xl mx-auto font-bold">
-              AutoMitra AI runs your outbound calls, inbound queries, WhatsApp follow-ups, and lead routing - 
-              so your sales team talks only to people who are ready.
+              AutoMitra is a human-like voice assistant for hotels, hostels, and homestays that answers enquiries, calls back missed calls, and follows up on WhatsApp — calmly, professionally, and automatically.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
               <Button variant="primary" size="lg" onClick={() => setIsModalOpen(true)}>
-                Launch My AI Calling Team
+                See a Live Call Demo
               </Button>
-              <Button variant="outline" size="lg" onClick={() => document.getElementById('platform')?.scrollIntoView({ behavior: 'smooth' })}>
-                Watch Demo
+              <Button variant="outline" size="lg" onClick={() => setIsModalOpen(true)}>
+                Talk to Us
               </Button>
             </div>
-
-            <p className="text-sm text-gray-700 font-bold uppercase tracking-wide">
-              Built for B2B teams who are done wasting time on missed calls and cold leads.
-            </p>
           </div>
 
           {/* Pop art character cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-16">
             {[
-              { name: 'AutoDial', role: 'Sales Closer', image: '/characters/autodial.svg', color: 'bg-primary-500' },
-              { name: 'Smart Receptionist', role: 'Never Miss a Call', image: '/characters/receptionist.svg', color: 'bg-orange-500' },
-              { name: 'WhatsApp Buddy', role: 'Follow-Up Expert', image: '/characters/whatsapp.svg', color: 'bg-magenta-500' },
+              { name: 'Voice Assistant', role: 'Answers Enquiries', image: '/characters/autodial.svg', color: 'bg-primary-500' },
+              { name: 'Call Back Agent', role: 'Missed Call Recovery', image: '/characters/receptionist.svg', color: 'bg-orange-500' },
+              { name: 'WhatsApp Helper', role: 'Follow-Up & Booking', image: '/characters/whatsapp.svg', color: 'bg-magenta-500' },
             ].map((agent, idx) => (
               <div
                 key={idx}

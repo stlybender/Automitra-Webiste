@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
 import { CTAModal } from '@/components/ui/CTAModal';
 
@@ -26,9 +27,16 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center">
-              <a href="#" className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-primary-500 border-4 border-black comic-shadow-sm flex items-center justify-center">
-                  <span className="text-white font-black text-2xl">A</span>
+              <a href="#" className="flex items-center space-x-2">
+                <div className="w-14 h-14 relative overflow-hidden flex items-center justify-center">
+                  <Image
+                    src="/automitra-logo.png"
+                    alt="AutoMitra Logo"
+                    width={80}
+                    height={80}
+                    className="object-contain scale-150"
+                    priority
+                  />
                 </div>
                 <span className="text-3xl font-black text-black uppercase tracking-tight">
                   AutoMitra AI

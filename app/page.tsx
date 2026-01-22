@@ -1,11 +1,14 @@
 import { Navbar } from '@/components/sections/Navbar';
 import { Hero } from '@/components/sections/Hero';
 import { PainPoints } from '@/components/sections/PainPoints';
-import { Agents } from '@/components/sections/Agents';
 import { Timeline } from '@/components/sections/Timeline';
+import { Agents } from '@/components/sections/Agents';
+import { WhoItsFor } from '@/components/sections/WhoItsFor';
+import { WhyExists } from '@/components/sections/WhyExists';
 import { SocialProof } from '@/components/sections/SocialProof';
 import { Platform } from '@/components/sections/Platform';
-import { FAQ } from '@/components/sections/FAQ';
+import { ResponsibleAI } from '@/components/sections/ResponsibleAI';
+import { FinalCTA } from '@/components/sections/FinalCTA';
 import { Footer } from '@/components/sections/Footer';
 
 export default function Home() {
@@ -14,11 +17,14 @@ export default function Home() {
       <Navbar />
       <Hero />
       <PainPoints />
-      <Agents />
       <Timeline />
+      <Agents />
+      <WhoItsFor />
+      <WhyExists />
       <SocialProof />
       <Platform />
-      <FAQ />
+      <ResponsibleAI />
+      <FinalCTA />
       <Footer />
     </main>
   );

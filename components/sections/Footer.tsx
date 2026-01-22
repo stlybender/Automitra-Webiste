@@ -1,19 +1,27 @@
+import Image from 'next/image';
+
 export function Footer() {
   return (
     <footer className="bg-black text-white py-12 px-4 sm:px-6 lg:px-8 border-t-8 border-accent-500">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-primary-500 border-4 border-white flex items-center justify-center">
-                <span className="text-white font-black text-2xl">A</span>
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="w-14 h-14 relative overflow-hidden flex items-center justify-center">
+                <Image
+                  src="/automitra-logo.png"
+                  alt="AutoMitra Logo"
+                  width={80}
+                  height={80}
+                  className="object-contain scale-150"
+                />
               </div>
               <span className="text-3xl font-black text-white uppercase tracking-tight">
                 AutoMitra AI
               </span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md font-bold">
-              AI Team That Grows Your Pipeline. Run outbound calls, inbound queries, and WhatsApp follow-ups on autopilot.
+              A Human-First Voice Assistant for Growing Businesses. Answers enquiries, calls back missed calls, and follows up on WhatsApp.
             </p>
           </div>
 

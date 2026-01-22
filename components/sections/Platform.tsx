@@ -6,33 +6,33 @@ import { CTAModal } from '@/components/ui/CTAModal';
 
 const modules = [
   {
-    title: 'Lead Generation Portal',
-    description: 'Upload lists, capture leads from forms and ads, and launch targeted call campaigns per industry.',
-    icon: '🎯',
+    title: 'AI Calling Engine',
+    description: 'For inbound and outbound calls with human-like conversations.',
+    icon: '📞',
     color: 'bg-primary-500',
   },
   {
-    title: 'AI Calling Engine',
-    description: 'Run thousands of outbound and inbound calls with human-like conversations and clear dispositions.',
-    icon: '📞',
+    title: 'WhatsApp Assistant',
+    description: 'For follow-ups and FAQs on the channel your guests actually use.',
+    icon: '💬',
     color: 'bg-magenta-500',
   },
   {
-    title: 'WhatsApp AI Agent',
-    description: 'Handle FAQs, quotes, and follow-ups on the channel your customers actually use.',
-    icon: '💬',
+    title: 'Knowledge Base Integration',
+    description: 'Uses your SOPs so every conversation stays on-brand.',
+    icon: '📚',
     color: 'bg-lime-500',
   },
   {
-    title: 'Knowledge-Base Brain',
-    description: 'Plug in your FAQs, scripts, and SOPs so every conversation stays on-brand.',
-    icon: '🧠',
+    title: 'Campaign & Conversation Visibility',
+    description: 'See every call and conversation with full transparency.',
+    icon: '📊',
     color: 'bg-orange-500',
   },
   {
-    title: 'Client & Campaign Dashboard',
-    description: 'Track performance by client, campaign, and channel with real-time analytics.',
-    icon: '📊',
+    title: 'Human Override & Escalation',
+    description: 'Seamless handover controls when human touch is needed.',
+    icon: '👤',
     color: 'bg-purple-500',
   },
 ];
@@ -46,15 +46,15 @@ export function Platform() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl sm:text-6xl font-black text-gray-900 mb-4 uppercase tracking-tight">
-              Explore the platform
+              More Than Just
             </h2>
             <div className="inline-block bg-orange-500 text-black px-8 py-4 border-4 border-black comic-shadow-lg -rotate-1">
               <span className="text-4xl sm:text-5xl font-black uppercase tracking-tight">
-                behind AutoMitra AI
+                Call Answering
               </span>
             </div>
             <p className="text-xl text-gray-900 mt-8 max-w-3xl mx-auto font-bold">
-              One system for lead generation, AI calling, WhatsApp engagement, and multi-client management.
+              Behind the scenes, AutoMitra includes capabilities that allow it to scale across industries — while keeping hospitality as the starting point.
             </p>
           </div>
 
@@ -77,10 +77,10 @@ export function Platform() {
           <div className="text-center">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button variant="primary" size="lg" onClick={() => setIsModalOpen(true)}>
-                Watch 3-min walkthrough
+                Book a Demo
               </Button>
               <Button variant="outline" size="lg" onClick={() => setIsModalOpen(true)}>
-                Book sandbox demo
+                Talk to Us
               </Button>
             </div>
           </div>

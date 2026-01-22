@@ -1,19 +1,7 @@
 const testimonials = [
   {
-    headline: 'Our speed-to-lead dropped from hours to minutes.',
-    author: 'SaaS Startup Founder',
-  },
-  {
-    headline: 'We now reach leads we used to ignore.',
-    author: 'Digital Marketing Agency',
-  },
-  {
     headline: 'Inbound calls are finally getting the attention they deserve.',
-    author: 'Real Estate Team',
-  },
-  {
-    headline: 'Our reps talk only to qualified prospects.',
-    author: 'B2B Sales Director',
+    author: 'Hospitality Operator',
   },
 ];
 
@@ -23,19 +11,19 @@ export function SocialProof() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-5xl sm:text-6xl font-black text-gray-900 mb-4 uppercase tracking-tight">
-            Your top caller.
+            Quietly Doing
           </h2>
           <div className="inline-block bg-accent-500 text-black px-8 py-4 border-4 border-black comic-shadow-lg rotate-1">
             <span className="text-5xl sm:text-6xl font-black uppercase tracking-tight">
-              Every single day.
+              The Work
             </span>
           </div>
           <p className="text-xl text-gray-900 mt-8 max-w-3xl mx-auto font-bold">
-            AutoMitra AI never forgets a follow-up, never misses a call, and never gets tired.
+            Currently onboarding early hospitality partners.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <div className="grid grid-cols-1 gap-6 mb-12 max-w-2xl mx-auto">
           {testimonials.map((testimonial, idx) => (
             <div key={idx} className="bg-white p-8 text-center border-4 border-black comic-shadow hover:comic-shadow-lg transition-all duration-300 hover:-translate-y-2 rounded-lg">
               <div className="mb-6">
@@ -49,7 +37,7 @@ export function SocialProof() {
                 {testimonial.headline}
               </p>
               <p className="text-sm font-bold text-gray-700 uppercase tracking-wide">
-                {testimonial.author}
+                — {testimonial.author}
               </p>
             </div>
           ))}
@@ -57,16 +45,20 @@ export function SocialProof() {
 
         <div className="flex flex-wrap justify-center gap-6 text-center">
           <div className="bg-primary-500 border-4 border-black comic-shadow px-8 py-6 halftone-bg-light">
-            <div className="text-4xl font-black text-black">10K+</div>
+            <div className="text-4xl font-black text-black">1000s</div>
             <div className="text-sm font-black text-black mt-2 uppercase tracking-wide">Calls Handled</div>
           </div>
           <div className="bg-magenta-500 border-4 border-black comic-shadow px-8 py-6 halftone-bg-light">
-            <div className="text-4xl font-black text-white">95%</div>
-            <div className="text-sm font-black text-white mt-2 uppercase tracking-wide">Response Rate</div>
+            <div className="text-4xl font-black text-white">High</div>
+            <div className="text-sm font-black text-white mt-2 uppercase tracking-wide">Response Rates</div>
           </div>
           <div className="bg-lime-500 border-4 border-black comic-shadow px-8 py-6 halftone-bg-light">
-            <div className="text-4xl font-black text-black">3x</div>
-            <div className="text-sm font-black text-black mt-2 uppercase tracking-wide">Pipeline Growth</div>
+            <div className="text-4xl font-black text-black">Fast</div>
+            <div className="text-sm font-black text-black mt-2 uppercase tracking-wide">Enquiry Handling</div>
+          </div>
+          <div className="bg-orange-500 border-4 border-black comic-shadow px-8 py-6 halftone-bg-light">
+            <div className="text-4xl font-black text-black">Less</div>
+            <div className="text-sm font-black text-black mt-2 uppercase tracking-wide">Staff Pressure</div>
           </div>
         </div>
       </div>

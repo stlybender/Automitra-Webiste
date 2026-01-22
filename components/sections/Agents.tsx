@@ -5,38 +5,38 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const agents = [
   {
-    name: 'AutoDial Sales Closer',
-    description: 'Runs high-volume outbound campaigns, qualifies prospects, and hands over only sales-ready leads to your reps.',
+    name: 'Calm, Polite Conversations',
+    description: 'AutoMitra speaks naturally and politely, making every guest feel welcomed and valued.',
     image: '/characters/autodial.svg',
     color: 'bg-primary-500',
   },
   {
-    name: 'Smart Receptionist',
-    description: 'Answers every inbound call in seconds, captures intent, books meetings, and routes urgent calls to the right person.',
+    name: 'One Question at a Time',
+    description: 'Never rushed. AutoMitra takes its time, asking one question at a time for clarity.',
     image: '/characters/receptionist.svg',
     color: 'bg-lime-500',
   },
   {
-    name: 'WhatsApp Follow-Up Buddy',
-    description: 'Continues the conversation on WhatsApp - answering questions, sharing details, and nudging prospects until they respond.',
+    name: 'Respects Silence & Hesitation',
+    description: 'Understands when callers need a moment to think and responds with patience.',
     image: '/characters/whatsapp.svg',
     color: 'bg-magenta-500',
   },
   {
-    name: 'Lead Router',
-    description: 'Pulls leads from forms, CRMs, and landing pages, then assigns them to the right AI flow or human owner automatically.',
+    name: 'Knows When to Hand Over',
+    description: 'Recognizes complex situations and seamlessly transfers to a human when needed.',
     image: '/characters/router.svg',
     color: 'bg-orange-500',
   },
   {
-    name: 'Knowledge-Base Expert',
-    description: 'Uses your FAQs, SOPs, and docs to answer detailed product and support questions without going off-script.',
+    name: 'No Pressure, No Salesy Tone',
+    description: 'Guests should feel like they spoke to a trained front-desk assistant — not a bot.',
     image: '/characters/knowledge.svg',
     color: 'bg-purple-500',
   },
   {
-    name: 'Onboarding Concierge',
-    description: 'Guides new clients through setup, captures requirements, and keeps them updated on campaign status.',
+    name: 'Comfort & Trust First',
+    description: 'While most systems focus on speed, AutoMitra focuses on building comfort and trust.',
     image: '/characters/onboarding.svg',
     color: 'bg-accent-500',
   },
@@ -50,15 +50,15 @@ export function Agents() {
       <div className="max-w-7xl mx-auto">
         <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
           <h2 className="text-5xl sm:text-6xl font-black text-gray-900 mb-4 uppercase tracking-tight">
-            Stop chasing.
+            Most systems focus on speed.
           </h2>
           <div className="inline-block bg-primary-500 text-black px-8 py-4 border-4 border-black comic-shadow-lg -rotate-1">
             <span className="text-5xl sm:text-6xl font-black uppercase tracking-tight">
-              Meet AutoMitra AI.
+              AutoMitra focuses on trust.
             </span>
           </div>
           <p className="text-xl text-gray-900 mt-8 max-w-3xl mx-auto font-bold">
-            Specialized AI agents that handle calls, WhatsApp, and lead workflows for you.
+            Designed to feel human — calm, patient, and respectful.
           </p>
         </div>
 

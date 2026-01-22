@@ -1,38 +1,24 @@
 const timeSlots = [
   {
-    time: '7:00 AM',
-    title: 'LEADS FROM LAST NIGHT ARE ALREADY CALLED',
-    description: "While you're grabbing coffee, AutoDial has already called leads that came in overnight, asked qualifying questions, and queued callbacks for your sales team.",
+    time: 'Step 1',
+    title: 'GUESTS CALL YOUR PROPERTY',
+    description: 'Inbound enquiries come in as usual — no change in your existing setup.',
     color: 'bg-lime-500',
-    actionWord: 'POW!',
-  },
-  {
-    time: '11:00 AM',
-    title: 'YOUR INBOUND CALLS NEVER RING OUT',
-    description: "The Smart Receptionist is answering calls on the first ring, capturing intent, and booking meetings into your team's calendar.",
-    color: 'bg-primary-500',
     actionWord: 'RING!',
   },
   {
-    time: '2:00 PM',
-    title: 'FOLLOW-UPS RUN ON AUTOPILOT',
-    description: 'WhatsApp Follow-Up Buddy is checking in on demos, sending reminders, and sharing answers from your knowledge base - all without a rep typing a word.',
+    time: 'Step 2',
+    title: 'AUTOMITRA ANSWERS OR CALLS BACK POLITELY',
+    description: 'If your staff is unavailable, AutoMitra responds calmly, captures intent, and reassures the caller.',
+    color: 'bg-primary-500',
+    actionWord: 'HELLO!',
+  },
+  {
+    time: 'Step 3',
+    title: 'DETAILS ARE SHARED ON WHATSAPP',
+    description: 'Booking information, location, and next steps are sent automatically. If needed, the call is handed over to your team.',
     color: 'bg-accent-500',
-    actionWord: 'ZOOM!',
-  },
-  {
-    time: '5:00 PM',
-    title: 'YOU SEE THE FULL FUNNEL',
-    description: 'Your dashboard shows every call, conversation, and outcome by campaign, industry, and client - so you know exactly where revenue is coming from.',
-    color: 'bg-orange-500',
-    actionWord: 'BOOM!',
-  },
-  {
-    time: '11:00 PM',
-    title: 'AUTOMITRA AI IS STILL WORKING',
-    description: "While you switch off, AutoMitra AI continues answering queries, capturing leads, and feeding tomorrow's pipeline.",
-    color: 'bg-magenta-500',
-    actionWord: 'ZAP!',
+    actionWord: 'SENT!',
   },
 ];
 
@@ -42,10 +28,10 @@ export function Timeline() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-5xl sm:text-6xl font-black text-gray-900 mb-4 uppercase tracking-tight">
-            A day with AutoMitra AI
+            How AutoMitra Helps
           </h2>
           <p className="text-xl text-gray-900 max-w-2xl mx-auto font-bold">
-            From first light to last call, your AI team never stops working.
+            AutoMitra works quietly in the background — supporting your staff, not replacing them.
           </p>
         </div>
 
@@ -140,7 +126,7 @@ export function Timeline() {
         {/* End banner */}
         <div className="mt-12 text-center">
           <div className="inline-block bg-black text-accent-500 px-12 py-6 border-4 border-accent-500 comic-shadow-lg transform -rotate-1">
-            <p className="text-2xl md:text-3xl font-black uppercase tracking-wide">24/7 • NON-STOP • ALWAYS ON</p>
+            <p className="text-2xl md:text-3xl font-black uppercase tracking-wide">CALM • PROFESSIONAL • AUTOMATIC</p>
           </div>
         </div>
       </div>
