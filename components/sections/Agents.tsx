@@ -46,19 +46,19 @@ export function Agents() {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section id="team" ref={ref} className="py-20 px-4 sm:px-6 lg:px-8 bg-cream-500">
+    <section id="team" ref={ref} className="py-24 px-4 sm:px-6 lg:px-8 bg-cream-500 halftone-bg-light">
       <div className="max-w-7xl mx-auto">
-        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-          <h2 className="text-5xl sm:text-6xl font-black text-gray-900 mb-4 uppercase tracking-tight">
+        <div className={`text-center mb-20 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 uppercase tracking-tight">
             Most systems focus on speed.
           </h2>
-          <div className="inline-block bg-primary-500 text-black px-8 py-4 border-4 border-black comic-shadow-lg -rotate-1">
-            <span className="text-5xl sm:text-6xl font-black uppercase tracking-tight">
+          <div className="inline-block bg-primary-500 text-black px-8 py-4 border-4 border-black comic-shadow-box -rotate-1 rounded-lg">
+            <span className="text-4xl sm:text-5xl font-black uppercase tracking-tight">
               AutoMitra focuses on trust.
             </span>
           </div>
-          <p className="text-xl text-gray-900 mt-8 max-w-3xl mx-auto font-bold">
-            Designed to feel human — calm, patient, and respectful.
+          <p className="text-xl text-gray-900 mt-10 max-w-3xl mx-auto font-black">
+            Designed to Feel Human. Calm, Patient & Respectful.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export function Agents() {
               className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
               style={{ transitionDelay: `${idx * 100}ms` }}
             >
-              <div className={`${agent.color} rounded-lg p-6 border-4 border-black comic-shadow hover:comic-shadow-lg transition-all duration-300 hover:-translate-y-2 h-full flex flex-col halftone-bg-light`}>
+              <div className={`${agent.color} rounded-xl p-6 border-4 border-black comic-shadow hover:comic-shadow-lg transition-all duration-300 hover:-translate-y-2 hover:scale-105 h-full flex flex-col halftone-bg-light`}>
                 <div className="w-28 h-28 mb-6 mx-auto bg-white rounded-full border-4 border-black p-4">
                   <Image 
                     src={agent.image} 
@@ -82,7 +82,7 @@ export function Agents() {
                 <h3 className="text-2xl font-black text-black mb-4 text-center uppercase tracking-wide">
                   {agent.name}
                 </h3>
-                <p className="text-black font-bold leading-relaxed text-center flex-grow">
+                <p className="text-black font-bold leading-relaxed text-center flex-grow text-lg">
                   {agent.description}
                 </p>
               </div>

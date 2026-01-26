@@ -24,10 +24,10 @@ const timeSlots = [
 
 export function Timeline() {
   return (
-    <section id="day" className="py-20 px-4 sm:px-6 lg:px-8 bg-cream-500">
+    <section id="day" className="py-24 px-4 sm:px-6 lg:px-8 bg-cream-500 halftone-bg-light">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl sm:text-6xl font-black text-gray-900 mb-4 uppercase tracking-tight">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 uppercase tracking-tight">
             How AutoMitra Helps
           </h2>
           <p className="text-xl text-gray-900 max-w-2xl mx-auto font-bold">
@@ -36,13 +36,13 @@ export function Timeline() {
         </div>
 
         {/* Comic book style grid */}
-        <div className="bg-white border-8 border-black comic-shadow-lg p-6 md:p-8">
-          <div className="space-y-6">
+        <div className="bg-white border-8 border-black comic-shadow-lg p-6 md:p-8 rounded-lg">
+          <div className="space-y-8">
             
             {timeSlots.map((slot, idx) => (
               <div key={idx}>
                 {/* Comic panel */}
-                <div className={`${slot.color} border-4 border-black comic-shadow relative overflow-hidden`}>
+                <div className={`${slot.color} border-4 border-black comic-shadow relative overflow-hidden rounded-lg`}>
                   {/* Speed lines background for odd panels */}
                   {idx % 2 === 0 && (
                     <div className="absolute inset-0 opacity-20" style={{
@@ -60,10 +60,10 @@ export function Timeline() {
                   <div className="grid md:grid-cols-2 gap-6 p-6 md:p-8 relative z-10">
                     {/* Character placeholder - alternating sides */}
                     <div className={idx % 2 === 0 ? 'order-1' : 'order-1 md:order-2'}>
-                      <div className="bg-white border-4 border-black h-64 flex items-center justify-center">
+                      <div className="bg-white border-4 border-black h-64 flex items-center justify-center rounded-lg">
                         <div className="text-center p-4">
-                          <div className="w-24 h-24 mx-auto mb-3 border-4 border-dashed border-gray-400 rounded-full flex items-center justify-center">
-                            <svg className="w-12 h-12 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                          <div className="w-28 h-28 mx-auto mb-4 border-4 border-dashed border-gray-400 rounded-full flex items-center justify-center">
+                            <svg className="w-14 h-14 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                               <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                             </svg>
                           </div>
@@ -75,15 +75,15 @@ export function Timeline() {
                     {/* Content */}
                     <div className={`flex flex-col justify-center ${idx % 2 === 0 ? 'order-2' : 'order-2 md:order-1'}`}>
                       {/* Time badge */}
-                      <div className="bg-white border-4 border-black px-6 py-3 inline-block comic-shadow-sm mb-4 w-fit">
+                      <div className="bg-white border-4 border-black px-6 py-3 inline-block comic-shadow-sm mb-5 w-fit rounded-lg">
                         <span className="font-black text-2xl uppercase tracking-wide">{slot.time}</span>
                       </div>
                       
-                      <h3 className="text-2xl md:text-3xl font-black text-black mb-3 uppercase tracking-tight leading-tight">
+                      <h3 className="text-2xl md:text-3xl font-black text-black mb-4 uppercase tracking-tight leading-tight">
                         {slot.title}
                       </h3>
                       
-                      <p className="text-black font-bold leading-relaxed">
+                      <p className="text-black font-bold leading-relaxed text-lg">
                         {slot.description}
                       </p>
                     </div>
@@ -124,9 +124,9 @@ export function Timeline() {
         </div>
 
         {/* End banner */}
-        <div className="mt-12 text-center">
-          <div className="inline-block bg-black text-accent-500 px-12 py-6 border-4 border-accent-500 comic-shadow-lg transform -rotate-1">
-            <p className="text-2xl md:text-3xl font-black uppercase tracking-wide">CALM • PROFESSIONAL • AUTOMATIC</p>
+        <div className="mt-16 text-center">
+          <div className="inline-block bg-black text-accent-500 px-12 py-6 border-4 border-accent-500 comic-shadow-box -rotate-1 rounded-lg">
+            <p className="text-xl md:text-2xl font-black uppercase tracking-wide">CALM • PROFESSIONAL • AUTOMATIC</p>
           </div>
         </div>
       </div>

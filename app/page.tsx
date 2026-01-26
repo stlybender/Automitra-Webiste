@@ -1,4 +1,3 @@
-import { Navbar } from '@/components/sections/Navbar';
 import { Hero } from '@/components/sections/Hero';
 import { PainPoints } from '@/components/sections/PainPoints';
 import { Timeline } from '@/components/sections/Timeline';
@@ -9,12 +8,10 @@ import { SocialProof } from '@/components/sections/SocialProof';
 import { Platform } from '@/components/sections/Platform';
 import { ResponsibleAI } from '@/components/sections/ResponsibleAI';
 import { FinalCTA } from '@/components/sections/FinalCTA';
-import { Footer } from '@/components/sections/Footer';
 
 export default function Home() {
   return (
     <main>
-      <Navbar />
       <Hero />
       <PainPoints />
       <Timeline />
@@ -25,7 +22,6 @@ export default function Home() {
       <Platform />
       <ResponsibleAI />
       <FinalCTA />
-      <Footer />
     </main>
   );
 }
