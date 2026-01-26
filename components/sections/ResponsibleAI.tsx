@@ -20,8 +20,8 @@ export function ResponsibleAI() {
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 uppercase tracking-tight">
             Built for Responsible
           </h2>
-          <div className="inline-block bg-lime-500 text-black px-8 py-4 border-4 border-black comic-shadow-box rotate-1 rounded-lg">
-            <span className="text-4xl sm:text-5xl font-black uppercase tracking-tight">
+          <div className="inline-block bg-lime-500 text-black px-4 sm:px-8 py-2 sm:py-4 border-4 border-black comic-shadow-box rotate-1 rounded-lg">
+            <span className="text-2xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight">
               AI Adoption
             </span>
           </div>
@@ -48,8 +48,8 @@ export function ResponsibleAI() {
         </div>
 
         <div className={`text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: '500ms' }}>
-          <div className="inline-block bg-black text-accent-500 px-12 py-6 border-4 border-accent-500 comic-shadow-box -rotate-1 rounded-lg">
-            <p className="text-xl md:text-2xl font-black uppercase tracking-wide">
+          <div className="inline-block bg-black text-accent-500 px-6 sm:px-12 py-4 sm:py-6 border-4 border-accent-500 comic-shadow-box -rotate-1 rounded-lg">
+            <p className="text-lg sm:text-xl lg:text-2xl font-black uppercase tracking-wide">
               Automation should help — not interrupt.
             </p>
           </div>

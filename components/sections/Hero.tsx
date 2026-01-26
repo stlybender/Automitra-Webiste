@@ -18,11 +18,11 @@ export function Hero() {
 
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black mb-8 text-balance leading-tight uppercase tracking-tight">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-black mb-8 text-balance leading-tight uppercase tracking-tight">
               <span className="text-black block mb-2">
                 Never Miss a
               </span>
-              <span className="inline-block bg-accent-500 text-black px-8 py-4 -rotate-2 border-4 border-black comic-shadow-box">
+              <span className="inline-block bg-accent-500 text-black px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-4 -rotate-2 border-4 border-black comic-shadow-box">
                 Booking Call Again
               </span>
             </h1>

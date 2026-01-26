@@ -58,8 +58,8 @@ export function PainPoints() {
         </div>
 
         <div className={`text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: '450ms' }}>
-          <div className="inline-block bg-magenta-500 text-white px-8 py-6 border-4 border-black comic-shadow-box rotate-1 max-w-3xl rounded-lg">
-            <p className="text-2xl font-black uppercase tracking-wide leading-relaxed">
+          <div className="inline-block bg-magenta-500 text-white px-4 sm:px-8 py-4 sm:py-6 border-4 border-black comic-shadow-box rotate-1 max-w-3xl rounded-lg">
+            <p className="text-lg sm:text-xl lg:text-2xl font-black uppercase tracking-wide leading-relaxed">
               Most properties don&apos;t lose business because of bad service — they lose it because no one was available to answer the call.
             </p>
           </div>

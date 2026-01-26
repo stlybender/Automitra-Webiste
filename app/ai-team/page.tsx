@@ -23,9 +23,9 @@ export default function AITeamPage() {
 
           <div className="absolute inset-0 halftone-bg opacity-30 pointer-events-none"></div>
           <div className={`relative z-10 transition-all duration-700 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-            <h1 className="text-5xl sm:text-6xl lg:text-8xl font-black text-gray-900 mb-8 uppercase tracking-tight leading-tight py-4">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-8xl font-black text-gray-900 mb-8 uppercase tracking-tight leading-tight py-4">
               Meet the{' '}
-              <span className="inline-block bg-accent-500 text-black px-6 sm:px-8 py-3 sm:py-4 -rotate-2 border-4 border-black comic-shadow-box mx-2">
+              <span className="inline-block bg-accent-500 text-black px-4 sm:px-6 lg:px-8 py-2 sm:py-3 lg:py-4 -rotate-2 border-4 border-black comic-shadow-box mx-2">
                 AI Team
               </span>
             </h1>

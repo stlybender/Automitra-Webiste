@@ -17,8 +17,8 @@ export function HowIHelp({ bullets, closingLine }: HowIHelpProps) {
           <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4 uppercase tracking-tight">
             How I Help Your Property?
           </h2>
-          <div className="inline-block bg-accent-500 text-black px-6 py-2 border-4 border-black comic-shadow-box -rotate-1 rounded-lg mt-4">
-            <span className="text-xl font-black uppercase tracking-wide">
+          <div className="inline-block bg-accent-500 text-black px-4 sm:px-6 py-1.5 sm:py-2 border-4 border-black comic-shadow-box -rotate-1 rounded-lg mt-4">
+            <span className="text-base sm:text-xl font-black uppercase tracking-wide">
               Real Impact
             </span>
           </div>

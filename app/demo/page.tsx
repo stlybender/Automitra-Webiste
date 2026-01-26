@@ -61,7 +61,7 @@ export default function DemoPage() {
         <div className={`max-w-5xl mx-auto text-center relative z-10 transition-all duration-700 ${heroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 uppercase tracking-tight leading-tight">
             See How AutoMitra Handles{' '}
-            <span className="inline-block bg-accent-500 text-black px-6 py-3 -rotate-2 border-4 border-black comic-shadow-box">
+            <span className="inline-block bg-accent-500 text-black px-3 sm:px-6 py-2 sm:py-3 -rotate-2 border-4 border-black comic-shadow-box">
               Real Guest Calls
             </span>
           </h1>
@@ -117,8 +117,8 @@ export default function DemoPage() {
             <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-4 uppercase tracking-tight">
               How Hospitality Teams Use AutoMitra
             </h2>
-            <div className="inline-block bg-accent-500 text-black px-6 py-2 border-4 border-black comic-shadow-box -rotate-1 rounded-lg mt-2">
-              <span className="text-lg font-black uppercase tracking-wide">
+            <div className="inline-block bg-accent-500 text-black px-3 sm:px-6 py-1.5 sm:py-2 border-4 border-black comic-shadow-box -rotate-1 rounded-lg mt-2">
+              <span className="text-base sm:text-lg font-black uppercase tracking-wide">
                 Real Stories
               </span>
             </div>
@@ -167,19 +167,19 @@ export default function DemoPage() {
             {/* Navigation Arrows */}
             <button
               onClick={prevSlide}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-accent-500 border-4 border-black comic-shadow hover:comic-shadow-lg transition-all duration-300 hover:scale-110 w-12 h-12 flex items-center justify-center rounded"
+              className="absolute left-0 top-1/2 -translate-y-1/2 translate-x-0 sm:-translate-x-4 md:-translate-x-12 bg-accent-500 border-4 border-black comic-shadow hover:comic-shadow-lg transition-all duration-300 hover:scale-110 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded"
               aria-label="Previous testimonial"
             >
-              <svg className="w-6 h-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={4}>
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={4}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             <button
               onClick={nextSlide}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-accent-500 border-4 border-black comic-shadow hover:comic-shadow-lg transition-all duration-300 hover:scale-110 w-12 h-12 flex items-center justify-center rounded"
+              className="absolute right-0 top-1/2 -translate-y-1/2 -translate-x-0 sm:translate-x-4 md:translate-x-12 bg-accent-500 border-4 border-black comic-shadow hover:comic-shadow-lg transition-all duration-300 hover:scale-110 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded"
               aria-label="Next testimonial"
             >
-              <svg className="w-6 h-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={4}>
+              <svg className="w-5 h-5 sm:w-6 sm:h-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={4}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
             </button>
@@ -255,8 +255,8 @@ export default function DemoPage() {
           <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-6 uppercase tracking-tight">
             Want to See If AutoMitra Fits Your Property
           </h2>
-          <div className="inline-block bg-accent-500 text-black px-8 py-4 border-4 border-black comic-shadow-box -rotate-1 rounded-lg mb-8">
-            <p className="text-xl font-bold">
+          <div className="inline-block bg-accent-500 text-black px-4 sm:px-8 py-2 sm:py-4 border-4 border-black comic-shadow-box -rotate-1 rounded-lg mb-8">
+            <p className="text-lg sm:text-xl font-bold">
               Let&apos;s talk about your specific needs
             </p>
           </div>

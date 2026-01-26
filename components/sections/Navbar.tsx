@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/Button';
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +17,17 @@ export function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
 
   const aiTeamLinks = [
     { name: 'AI Team Hub', href: '/ai-team' },
@@ -99,10 +111,26 @@ export function Navbar() {
             </div>
 
             <div className="flex items-center space-x-4">
+              {/* Mobile menu button */}
+              <button
+                className="md:hidden text-black p-2"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                aria-label="Toggle mobile menu"
+              >
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                  {isMobileMenuOpen ? (
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  ) : (
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                  )}
+                </svg>
+              </button>
+
               <a 
                 href="https://platform.automitra.ai" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                className="hidden sm:block"
               >
                 <Button variant="primary" size="sm">
                   Launch your AI team
@@ -112,6 +140,111 @@ export function Navbar() {
           </div>
         </div>
       </nav>
+
+      {/* Mobile Menu Overlay */}
+      {isMobileMenuOpen && (
+        <>
+          {/* Backdrop */}
+          <div 
+            className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
+          
+          {/* Mobile Menu Panel */}
+          <div className="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white border-l-4 border-black z-50 md:hidden overflow-y-auto">
+            <div className="p-6">
+              {/* Close button */}
+              <button
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="absolute top-4 right-4 text-black p-2"
+                aria-label="Close menu"
+              >
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+
+              {/* Logo */}
+              <Link href="/" className="flex items-center space-x-2 mb-8" onClick={() => setIsMobileMenuOpen(false)}>
+                <div className="w-10 h-10 relative flex items-center justify-center">
+                  <Image
+                    src="/am-logo.webp"
+                    alt="AutoMitra Logo"
+                    width={40}
+                    height={40}
+                    className="object-contain"
+                  />
+                </div>
+                <span className="text-2xl font-black text-black uppercase tracking-tight">
+                  AutoMitra AI
+                </span>
+              </Link>
+
+              {/* Navigation Links */}
+              <nav className="space-y-1">
+                {/* AI Team Section */}
+                <div className="border-b-2 border-gray-200 pb-2 mb-2">
+                  <p className="text-xs font-black text-gray-500 uppercase tracking-wide mb-2 px-4">AI Team</p>
+                  {aiTeamLinks.map((link, idx) => (
+                    <Link
+                      key={idx}
+                      href={link.href}
+                      className="block px-4 py-3 text-black hover:bg-accent-500 transition-colors font-black uppercase tracking-wide text-sm border-l-4 border-transparent hover:border-black"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {link.name}
+                    </Link>
+                  ))}
+                </div>
+
+                {/* Main Links */}
+                <Link
+                  href="/demo"
+                  className="block px-4 py-3 text-black hover:bg-accent-500 transition-colors font-black uppercase tracking-wide text-sm border-l-4 border-transparent hover:border-black"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Demo
+                </Link>
+                <Link
+                  href="/pricing"
+                  className="block px-4 py-3 text-black hover:bg-accent-500 transition-colors font-black uppercase tracking-wide text-sm border-l-4 border-transparent hover:border-black"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Pricing
+                </Link>
+                <a
+                  href="#platform"
+                  className="block px-4 py-3 text-black hover:bg-accent-500 transition-colors font-black uppercase tracking-wide text-sm border-l-4 border-transparent hover:border-black"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Platform
+                </a>
+                <a
+                  href="#faq"
+                  className="block px-4 py-3 text-black hover:bg-accent-500 transition-colors font-black uppercase tracking-wide text-sm border-l-4 border-transparent hover:border-black"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  FAQ
+                </a>
+              </nav>
+
+              {/* CTA Button */}
+              <div className="mt-8 px-4">
+                <a 
+                  href="https://platform.automitra.ai" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <Button variant="primary" size="md" className="w-full">
+                    Launch your AI team
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </>
   );
 }

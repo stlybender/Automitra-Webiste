@@ -13,8 +13,8 @@ export function SocialProof() {
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 uppercase tracking-tight">
             Quietly Doing
           </h2>
-          <div className="inline-block bg-accent-500 text-black px-8 py-4 border-4 border-black comic-shadow-lg rotate-1 rounded-lg">
-            <span className="text-4xl sm:text-5xl font-black uppercase tracking-tight">
+          <div className="inline-block bg-accent-500 text-black px-4 sm:px-8 py-2 sm:py-4 border-4 border-black comic-shadow-lg rotate-1 rounded-lg">
+            <span className="text-2xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight">
               The Work
             </span>
           </div>
@@ -43,22 +43,22 @@ export function SocialProof() {
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-8 text-center">
-          <div className="bg-primary-500 border-4 border-black comic-shadow hover:comic-shadow-lg transition-all duration-300 hover:-translate-y-2 px-8 py-6 halftone-bg-light rounded-lg">
-            <div className="text-5xl font-black text-black">1000s</div>
-            <div className="text-sm font-black text-black mt-3 uppercase tracking-wide">Calls Handled</div>
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-8 text-center">
+          <div className="bg-primary-500 border-4 border-black comic-shadow hover:comic-shadow-lg transition-all duration-300 hover:-translate-y-2 px-4 sm:px-8 py-4 sm:py-6 halftone-bg-light rounded-lg">
+            <div className="text-3xl sm:text-5xl font-black text-black">1000s</div>
+            <div className="text-xs sm:text-sm font-black text-black mt-2 sm:mt-3 uppercase tracking-wide">Calls Handled</div>
           </div>
-          <div className="bg-magenta-500 border-4 border-black comic-shadow hover:comic-shadow-lg transition-all duration-300 hover:-translate-y-2 px-8 py-6 halftone-bg-light rounded-lg">
-            <div className="text-5xl font-black text-white">High</div>
-            <div className="text-sm font-black text-white mt-3 uppercase tracking-wide">Response Rates</div>
+          <div className="bg-magenta-500 border-4 border-black comic-shadow hover:comic-shadow-lg transition-all duration-300 hover:-translate-y-2 px-4 sm:px-8 py-4 sm:py-6 halftone-bg-light rounded-lg">
+            <div className="text-3xl sm:text-5xl font-black text-white">High</div>
+            <div className="text-xs sm:text-sm font-black text-white mt-2 sm:mt-3 uppercase tracking-wide">Response Rates</div>
           </div>
-          <div className="bg-lime-500 border-4 border-black comic-shadow hover:comic-shadow-lg transition-all duration-300 hover:-translate-y-2 px-8 py-6 halftone-bg-light rounded-lg">
-            <div className="text-5xl font-black text-black">Fast</div>
-            <div className="text-sm font-black text-black mt-3 uppercase tracking-wide">Enquiry Handling</div>
+          <div className="bg-lime-500 border-4 border-black comic-shadow hover:comic-shadow-lg transition-all duration-300 hover:-translate-y-2 px-4 sm:px-8 py-4 sm:py-6 halftone-bg-light rounded-lg">
+            <div className="text-3xl sm:text-5xl font-black text-black">Fast</div>
+            <div className="text-xs sm:text-sm font-black text-black mt-2 sm:mt-3 uppercase tracking-wide">Enquiry Handling</div>
           </div>
-          <div className="bg-orange-500 border-4 border-black comic-shadow hover:comic-shadow-lg transition-all duration-300 hover:-translate-y-2 px-8 py-6 halftone-bg-light rounded-lg">
-            <div className="text-5xl font-black text-black">Less</div>
-            <div className="text-sm font-black text-black mt-3 uppercase tracking-wide">Staff Pressure</div>
+          <div className="bg-orange-500 border-4 border-black comic-shadow hover:comic-shadow-lg transition-all duration-300 hover:-translate-y-2 px-4 sm:px-8 py-4 sm:py-6 halftone-bg-light rounded-lg">
+            <div className="text-3xl sm:text-5xl font-black text-black">Less</div>
+            <div className="text-xs sm:text-sm font-black text-black mt-2 sm:mt-3 uppercase tracking-wide">Staff Pressure</div>
           </div>
         </div>
       </div>

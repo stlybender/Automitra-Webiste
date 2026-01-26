@@ -90,11 +90,11 @@ export function Timeline() {
                   </div>
 
                   {/* Action word */}
-                  <div className={`absolute ${idx % 2 === 0 ? 'top-4 right-8' : 'bottom-4 left-8'} transform ${idx % 2 === 0 ? 'rotate-12' : '-rotate-12'} z-20`}>
-                    <div className="text-4xl md:text-6xl font-black text-white" style={{
-                      WebkitTextStroke: '3px black',
+                  <div className={`absolute ${idx % 2 === 0 ? 'top-4 right-4 sm:right-8' : 'bottom-4 left-4 sm:left-8'} transform ${idx % 2 === 0 ? 'rotate-12' : '-rotate-12'} z-20`}>
+                    <div className="text-2xl sm:text-4xl md:text-6xl font-black text-white" style={{
+                      WebkitTextStroke: '2px black',
                       paintOrder: 'stroke fill',
-                      filter: 'drop-shadow(4px 4px 0px black)'
+                      filter: 'drop-shadow(3px 3px 0px black)'
                     }}>
                       {slot.actionWord}
                     </div>
@@ -125,8 +125,8 @@ export function Timeline() {
 
         {/* End banner */}
         <div className="mt-16 text-center">
-          <div className="inline-block bg-black text-accent-500 px-12 py-6 border-4 border-accent-500 comic-shadow-box -rotate-1 rounded-lg">
-            <p className="text-xl md:text-2xl font-black uppercase tracking-wide">CALM • PROFESSIONAL • AUTOMATIC</p>
+          <div className="inline-block bg-black text-accent-500 px-6 sm:px-12 py-4 sm:py-6 border-4 border-accent-500 comic-shadow-box -rotate-1 rounded-lg">
+            <p className="text-base sm:text-xl lg:text-2xl font-black uppercase tracking-wide">CALM • PROFESSIONAL • AUTOMATIC</p>
           </div>
         </div>
       </div>

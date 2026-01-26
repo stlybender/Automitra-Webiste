@@ -46,8 +46,8 @@ export function Platform() {
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-6 uppercase tracking-tight">
               More Than Just
             </h2>
-            <div className="inline-block bg-orange-500 text-black px-8 py-4 border-4 border-black comic-shadow-lg -rotate-1 rounded-lg">
-              <span className="text-3xl sm:text-4xl font-black uppercase tracking-tight">
+            <div className="inline-block bg-orange-500 text-black px-4 sm:px-8 py-2 sm:py-4 border-4 border-black comic-shadow-lg -rotate-1 rounded-lg">
+              <span className="text-2xl sm:text-3xl lg:text-4xl font-black uppercase tracking-tight">
                 Call Answering
               </span>
             </div>

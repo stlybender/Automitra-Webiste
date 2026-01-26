@@ -24,8 +24,8 @@ export function RoleCTA({ title, description }: RoleCTAProps) {
         <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-6 uppercase tracking-tight">
           {title}
         </h2>
-        <div className="inline-block bg-accent-500 text-black px-8 py-4 border-4 border-black comic-shadow-box -rotate-1 rounded-lg mb-8">
-          <p className="text-xl sm:text-2xl font-bold max-w-2xl leading-tight">
+        <div className="inline-block bg-accent-500 text-black px-4 sm:px-8 py-2 sm:py-4 border-4 border-black comic-shadow-box -rotate-1 rounded-lg mb-8">
+          <p className="text-lg sm:text-xl lg:text-2xl font-bold max-w-2xl leading-tight">
             {description}
           </p>
         </div>
