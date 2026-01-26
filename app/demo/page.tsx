@@ -257,7 +257,7 @@ export default function DemoPage() {
           </h2>
           <div className="inline-block bg-accent-500 text-black px-8 py-4 border-4 border-black comic-shadow-box -rotate-1 rounded-lg mb-8">
             <p className="text-xl font-bold">
-              Let's talk about your specific needs
+              Let&apos;s talk about your specific needs
             </p>
           </div>
           <div className="mt-8">
